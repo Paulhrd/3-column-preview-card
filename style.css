@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --color1: hsl(31, 77%, 52%);
+    --color2: hsl(184, 100%, 22%);
+    --color3: hsl(179, 100%, 13%);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+
+}
+
+/*############
+    TRPLE BOX
+##############*/
+
+section {
+    display: flex;
+    margin: 6rem;
+    border: 50px;
+
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+}
+section p{
+    line-height: 1.5rem;
+    font-size: 15px;
+    margin-bottom: 5rem;
+}
+
+.box1 {
+    background-color: var(--color1);
+    padding: 4rem 3rem;
+}
+.box2 {
+    background-color: var(--color2);
+    padding: 4rem 3rem;
+}
+.box3 {
+    background-color: var(--color3);
+    padding: 4rem 3rem;
+}
+
+/*############
+    BUTTON
+##############*/
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    border: solid 0.1em;
+    border-color: transparent;
+    width: 100px;
+    padding:1rem;
+    border-radius: 25px;
+    text-align: center;
+}
+.box1 .button {
+    color: var(--color1);
+    
+}
+.box2 .button {
+    color: var(--color2);
+    
+}
+.box3 .button {
+    color: var(--color3);
+    
+}
+
+
+.button:hover {
+    background-color: transparent;
+    border: solid 0.1em;
+    border-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+
+}
+
+/*############
+    FIN
+##############*/
+
+.attribution{
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        margin: 1rem;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1024px) {
+    section {
+        margin: 3rem;
+    }
+}
